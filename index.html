@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>○×ゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <h1>○×ゲーム</h1>
+
+  <!-- 手番を表示 -->
+  <p id="turn">今は ○ の番です</p>
+
+  <!-- ゲームの盤面全体を入れる箱 -->
+  <div id="board">
+    <!-- 1マスずつ（全部で9マス） -->
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </div>
+
+  <!-- 先手後手を変えるボタン群 -->
+  <div class="turn-selector">
+    <span class="label">手番</span>
+    <div class="button-group">
+      <button id="playOButton">先手(○)</button>
+      <button id="playXButton">後手(×)</button>
+    </div>
+  </div>
+
+
+  <!-- リセットボタン -->
+  <button id="resetButton">リセット</button>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
